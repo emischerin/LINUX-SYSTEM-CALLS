@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1527770524 source:/home/egor/cb/fileio/fileio.cpp
+	"fileio.h"
+
+1527770509 /home/egor/cb/fileio/fileio.h
+	<stdlib.h>
+	<iostream>
+	<sys/types.h>
+	<fcntl.h>
+	<unistd.h>
+
+1527767440 source:/home/egor/cb/fileio/main.cpp
+	<iostream>
+	"fileio.h"
+
