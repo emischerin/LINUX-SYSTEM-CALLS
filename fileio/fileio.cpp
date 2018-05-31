@@ -82,3 +82,24 @@ void FileIO::PrintBuffer(void)
         std::cout << buffer[i];
     }
 }
+
+void FileIO::ClearBuffer(void)
+{
+    free(buffer);
+    buffer_length = 0;
+}
+
+void FileIO::ResetBuffer(int buffer_length)
+{
+    ClearBuffer();
+    SetBufferSize(buffer_length);
+}
+
+void FileIO::ReadSystemInfo(std::string* info,const char* filepath)
+{
+    std::ifstream file(filepath);
+    std::stringstream buffer;
+
+    buffer << file.rdbuf();
+    *info = buffer.str();
+}

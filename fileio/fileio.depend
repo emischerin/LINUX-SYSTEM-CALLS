@@ -13,3 +13,24 @@
 	<iostream>
 	"fileio.h"
 
+1527793842 source:/home/egor/git/LINUX-SYSTEM-CALLS/fileio/fileio.cpp
+	"fileio.h"
+
+1527793984 /home/egor/git/LINUX-SYSTEM-CALLS/fileio/fileio.h
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<sstream>
+	<sys/types.h>
+	<fcntl.h>
+	<unistd.h>
+
+1527792026 source:/home/egor/git/LINUX-SYSTEM-CALLS/fileio/main.cpp
+	<iostream>
+	"systeminfo.h"
+
+1527794001 /home/egor/git/LINUX-SYSTEM-CALLS/fileio/systeminfo.h
+	<iostream>
+	<fstream>
+	"fileio.h"
+

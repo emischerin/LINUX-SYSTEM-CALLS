@@ -35,6 +35,8 @@
 		<Unit filename="fileio.cpp" />
 		<Unit filename="fileio.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="systeminfo.cpp" />
+		<Unit filename="systeminfo.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

@@ -3,6 +3,8 @@
 
 #include <stdlib.h>
 #include <iostream>
+#include <fstream>
+#include <sstream>
 #include <sys/types.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -13,6 +15,7 @@ public:
 
         //Buffer for reading files
         char* buffer;
+        int buffer_length;
 
         int OpenFileReadOnly(const char* filepath);
         int OpenFileWriteOnly(const char* filepath);
@@ -23,14 +26,23 @@ public:
         //Also Creates a file,still user has no rights to open and manipulate file
         int CreateFileWithFullPermissions(const char* filepath);
 
+        //Reads the file into buffer
         unsigned int ReadFile(int file,unsigned int count);
 
         void SetBufferSize(int size);
 
         void PrintBuffer(void);
 
-private:
-            int buffer_length;
+        void ClearBuffer(void);
+
+        // Clears Buffer and sets new length
+        void ResetBuffer(int buffer_length);
+
+
+        // For Retrieving system info
+        void ReadSystemInfo(std::string* info,const char* filepath);
+
+
 
 };
 #endif // FILEIO_H
