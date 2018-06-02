@@ -1,0 +1,5 @@
+#!/bin/bash
+
+g++ -Wall -g main.cpp fileio.cpp systeminfo.cpp -o test
+
+exit 0

@@ -19,15 +19,20 @@ public:
 
         int OpenFileReadOnly(const char* filepath);
         int OpenFileWriteOnly(const char* filepath);
-
+        int CloseFile(int* file);
         // This function creates file but user has no rights to open file
         int CreateFile(const char* filepath);
 
+        int WriteToFile(int* file,void* data,size_t count);
         //Also Creates a file,still user has no rights to open and manipulate file
         int CreateFileWithFullPermissions(const char* filepath);
 
+        // dup system call wrapper
+        int UpdateFileDescriptor(int* fd);
         //Reads the file into buffer
         unsigned int ReadFile(int file,unsigned int count);
+
+
 
         void SetBufferSize(int size);
 

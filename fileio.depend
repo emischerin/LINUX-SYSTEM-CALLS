@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1527770524 source:/home/egor/cb/fileio/fileio.cpp
+	"fileio.h"
+
+1527770509 /home/egor/cb/fileio/fileio.h
+	<stdlib.h>
+	<iostream>
+	<sys/types.h>
+	<fcntl.h>
+	<unistd.h>
+
+1527767440 source:/home/egor/cb/fileio/main.cpp
+	<iostream>
+	"fileio.h"
+
+1527934008 source:/home/egor/git/LINUX-SYSTEM-CALLS/fileio/fileio.cpp
+	"fileio.h"
+
+1527934009 /home/egor/git/LINUX-SYSTEM-CALLS/fileio/fileio.h
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<sstream>
+	<sys/types.h>
+	<fcntl.h>
+	<unistd.h>
+
+1527938688 source:/home/egor/git/LINUX-SYSTEM-CALLS/fileio/main.cpp
+	<iostream>
+	"systeminfo.h"
+	"fileio.h"
+	"processmanager.h"
+
+1527794001 /home/egor/git/LINUX-SYSTEM-CALLS/fileio/systeminfo.h
+	<iostream>
+	<fstream>
+	"fileio.h"
+
+1527794086 source:/home/egor/git/LINUX-SYSTEM-CALLS/fileio/systeminfo.cpp
+	"systeminfo.h"
+	<iostream>
+
+1527938831 /home/egor/git/LINUX-SYSTEM-CALLS/fileio/processmanager.h
+	<iostream>
+	<unistd.h>
+	<vector>
+	<string>
+
+1527938808 source:/home/egor/git/LINUX-SYSTEM-CALLS/fileio/processmanager.cpp
+	"processmanager.h"
+
